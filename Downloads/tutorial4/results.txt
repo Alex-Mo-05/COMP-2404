@@ -1,0 +1,241 @@
+
+***************************************************************************
+* Compilation
+***************************************************************************
+Executing: make clean
+Executing: make test
+Executing: make test2
+
+Testing stack object array
+
+Executing: valgrind ./test
+Running:  ['valgrind', './test']
+Enter one of the following options: 
+0. Test StackArrays::getObjectArray
+1. Test StackArrays::getPointerArray
+2. Test HeapArrays::getObjectArray
+3. Test HeapArrays::getPointerArray
+Enter 3 strings (separated by spaces): 
+TextArea id: Review
+Preferred location: 1, 2
+Size: 3, 4
+Text: picture
+  ___
+ / _ \
+| (_) |
+ \___/
+
+TextArea id: Playthrough
+Preferred location: 5, 6
+Size: 7, 8
+Text: picture
+  ,--.
+ /  0 \
+|   .  |
+ \___/
+
+TextArea id: Podcast
+Preferred location: 9, 10
+Size: 11, 12
+Text: picture
+  ,--.
+ /  0 \
+|   |  |
+ \___/
+
+testStackObjectArray passed
+
+==44524== Memcheck, a memory error detector
+==44524== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==44524== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==44524== Command: ./test
+==44524== 
+==44524== 
+==44524== HEAP SUMMARY:
+==44524==     in use at exit: 0 bytes in 0 blocks
+==44524==   total heap usage: 24 allocs, 24 frees, 82,940 bytes allocated
+==44524== 
+==44524== All heap blocks were freed -- no leaks are possible
+==44524== 
+==44524== For lists of detected and suppressed errors, rerun with: -s
+==44524== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+'Review' found, 2 marks
+'Playthrough' found, 2 marks
+'Podcast' found, 2 marks
+'picture' found, 2 marks
+'All heap blocks were freed -- no leaks are possible' found, 2 marks
+
+Testing stack pointer array
+
+Executing: valgrind ./test
+Running:  ['valgrind', './test']
+Enter one of the following options: 
+0. Test StackArrays::getObjectArray
+1. Test StackArrays::getPointerArray
+2. Test HeapArrays::getObjectArray
+3. Test HeapArrays::getPointerArray
+Enter 3 strings (separated by spaces): 
+TextArea id: Video
+Preferred location: 1, 2
+Size: 3, 4
+Text: DUPLICATE
+TextArea id: Title
+Preferred location: 5, 6
+Size: 7, 8
+Text: DUPLICATE
+TextArea id: CleverTitle
+Preferred location: 9, 10
+Size: 11, 12
+Text: DUPLICATE
+testStackPointerArray passed
+
+==44526== Memcheck, a memory error detector
+==44526== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==44526== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==44526== Command: ./test
+==44526== 
+==44526== 
+==44526== HEAP SUMMARY:
+==44526==     in use at exit: 0 bytes in 0 blocks
+==44526==   total heap usage: 24 allocs, 24 frees, 82,940 bytes allocated
+==44526== 
+==44526== All heap blocks were freed -- no leaks are possible
+==44526== 
+==44526== For lists of detected and suppressed errors, rerun with: -s
+==44526== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+'Video' found, 2 marks
+'Title' found, 2 marks
+'CleverTitle' found, 2 marks
+'DUPLICATE' found, 2 marks
+'All heap blocks were freed -- no leaks are possible' found, 2 marks
+
+Testing heap object array
+
+Executing: valgrind ./test
+Running:  ['valgrind', './test']
+Enter one of the following options: 
+0. Test StackArrays::getObjectArray
+1. Test StackArrays::getPointerArray
+2. Test HeapArrays::getObjectArray
+3. Test HeapArrays::getPointerArray
+Enter 3 strings (separated by spaces): 
+TextArea id: Review
+Preferred location: 1, 2
+Size: 3, 4
+Text: picture
+  ___
+ / _ \
+| (_) |
+ \___/
+
+TextArea id: Playthrough
+Preferred location: 5, 6
+Size: 7, 8
+Text: picture
+  ,--.
+ /  0 \
+|   .  |
+ \___/
+
+TextArea id: Podcast
+Preferred location: 9, 10
+Size: 11, 12
+Text: picture
+  ,--.
+ /  0 \
+|   |  |
+ \___/
+
+testHeapObjectArray passed
+
+==44528== Memcheck, a memory error detector
+==44528== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==44528== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==44528== Command: ./test
+==44528== 
+==44528== 
+==44528== HEAP SUMMARY:
+==44528==     in use at exit: 0 bytes in 0 blocks
+==44528==   total heap usage: 26 allocs, 26 frees, 83,284 bytes allocated
+==44528== 
+==44528== All heap blocks were freed -- no leaks are possible
+==44528== 
+==44528== For lists of detected and suppressed errors, rerun with: -s
+==44528== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+'Review' found, 2 marks
+'Playthrough' found, 2 marks
+'Podcast' found, 2 marks
+'picture' found, 2 marks
+'All heap blocks were freed -- no leaks are possible' found, 2 marks
+
+Testing heap pointer array
+
+Executing: valgrind ./test
+Running:  ['valgrind', './test']
+Enter one of the following options: 
+0. Test StackArrays::getObjectArray
+1. Test StackArrays::getPointerArray
+2. Test HeapArrays::getObjectArray
+3. Test HeapArrays::getPointerArray
+Enter 3 strings (separated by spaces): 
+TextArea id: Video
+Preferred location: 1, 2
+Size: 3, 4
+Text: DUPLICATE
+TextArea id: Title
+Preferred location: 5, 6
+Size: 7, 8
+Text: DUPLICATE
+TextArea id: CleverTitle
+Preferred location: 9, 10
+Size: 11, 12
+Text: DUPLICATE
+testHeapPointerArray passed
+
+==44540== Memcheck, a memory error detector
+==44540== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==44540== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==44540== Command: ./test
+==44540== 
+==44540== 
+==44540== HEAP SUMMARY:
+==44540==     in use at exit: 0 bytes in 0 blocks
+==44540==   total heap usage: 26 allocs, 26 frees, 83,284 bytes allocated
+==44540== 
+==44540== All heap blocks were freed -- no leaks are possible
+==44540== 
+==44540== For lists of detected and suppressed errors, rerun with: -s
+==44540== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+'Video' found, 2 marks
+'Title' found, 2 marks
+'CleverTitle' found, 2 marks
+'DUPLICATE' found, 2 marks
+'All heap blocks were freed -- no leaks are possible' found, 2 marks
+Executing: ./test2
+Running:  ['./test2']
+
+Testing RGB const
+
+
+Testing RGB static functions
+
+
+Testing TextArea const
+
+TextArea id: id
+Preferred location: 10, 10
+Size: 100, 100
+Text: text
+
+
+Test passed
+
+
+***************************************************************************
+* Mark: 50/50
+***************************************************************************
+
