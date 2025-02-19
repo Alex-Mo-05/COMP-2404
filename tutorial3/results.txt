@@ -1,0 +1,54 @@
+
+***************************************************************************
+* Compilation
+***************************************************************************
+Executing: make clean
+Executing: make all
+
+Testing RGB constructor
+
+Executing: ./test
+0. Constructor tests
+1. Setter tests
+Red, Green, Blue getter values are correct
+Constructor test 1 passed
+CuColour getter value is correct
+Constructor test 2 passed
+Red, Green, Blue getter values are correct
+Constructor test 3 passed
+CuColour getter value is correct
+Constructor test 4 passed
+All constructor tests complete. Your score is 4/4
+
+
+Program exited with zero status, test passed
+
+Testing RGB setters
+
+Executing: ./test
+0. Constructor tests
+1. Setter tests
+Red setter value is correct
+Setter test 1 passed
+CuColour getter value is correct
+Setter test 2 passed
+Green setter value is correct
+Setter test 3 passed
+CuColour getter value is correct
+Setter test 4 passed
+Blue setter value is correct
+Setter test 5 passed
+CuColour getter value is correct
+Setter test 6 passed
+Red, Green, Blue getter values are correct after setting CuColour
+Setter test 7 passed
+All setter tests complete. Your score is 7/7
+
+
+Program exited with zero status, test passed
+
+
+***************************************************************************
+* Mark: 11/11
+***************************************************************************
+
